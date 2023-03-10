@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(197, 195, 195);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+p {
+    margin: 0 0 5px;
+}
+
+/* BAYAN */
+.bayan {
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+.bayan:hover {
+    cursor: pointer;
+}
+
+.bayan-title {
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .5s ease-out;
+}
+
+.bayan-title:hover {
+    background-color: #4d4d4d;
+    color: #fff;
+}
+
+.bayan-input {
+    width: 0;
+    height: 0;
+    position: absolute;
+    appearance: none;
+}
+
+.bayan-input:checked + .bayan-content {
+    display: block;
+}
+
+.bayan-item {
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.bayan-content {
+    padding: 10px 20px;
+    display: none;
+}
+
+.bayan-img {
+   width: 100%;
+}
